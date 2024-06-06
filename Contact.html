@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShapeShift Studio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+                       <!-- NAVBAR -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+            <img src="/img/LOGO.png" alt="ShapeShift Logo" width="50">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html" style="color: white;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/About.html" style="color: white;">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Classes.html" style="color: white;">Classes</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                  Membership
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Lagos</a></li>
+                  <li><a class="dropdown-item" href="#">Edo</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Classes.html" style="color: white;">Community</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Contact.html" style="color: white;">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main>
+    <!-- heading -->
+    <form onsubmit="return validateForm()">
+      <div class="form-01">
+          
+        <div class="head">
+          <h6>Name</h6>
+          <div class="names">
+              <div class="index">
+                  <input type="text" name="name" id="first" placeholder="First Name" required/>
+                  <input type="text" name="name" id="last" placeholder="Last Name" required/>
+              </div>
+          </div>
+              <!-- <div class="lastname">
+                  <label class="text-buttom" for="name">First Name</label>
+                  <label class="text-buttom" for="name">Last Name</label>
+              </div> -->
+        </div>
+         <h6>Address</h6>
+          <div class="addresses">
+              <div id="address">
+                  <input type="text" name="name" id="street" placeholder="State Province" required/>
+                  <input type="text" name="name" id="state" placeholder="Street Address" required/>
+                  
+              </div>
+              <!-- <div id="province">
+                  <label class="text-buttom" for="state">State Province</label>
+                  <label class="text-buttom" for="adddress">Street address</label>
+              </div> -->
+          </div>
+          <div class="email">
+              <h6>Email</h6>
+              <input type="email" name="name" id="emailInput" placeholder="Email Address"/>
+          </div>
+          <div class="inform">
+              <div class="cellular">
+                  <h6>Cellular Number</h6>
+                  <input type="number" name="name" id="cellular" placeholder="Phone Number">
+              </div>
+          <div>
+            <h6>Gender</h6>
+              <div class="gender">
+                  <div>
+                     <input type="radio" name="name" id="male">
+                     <label class="text-buttom" for="">Male</label>
+                  </div>
+                  <style>
+                    form{
+                      padding: 100px;
+                      background-color: black;
+                      color: white;
+                    }
+                  </style>
+                  <div>
+                     <input type="radio" name="name" id="female"/>
+                     <label class="text-buttom" for="">Female</label>
+                  </div>
+              </div> 
+            </div>
+          </div>
+              </div>
+              <button id="btn" onclick="append()
+              " style="padding: 10px; border-radius: 20px;margin-top: 20px;">Submit</button>
+      </div>
+    </form>
+  </main><footer class="bg-warning text-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Navigation</h5>
+                <ul class="list-unstyled">
+                    <li><a href="/index.html" class="text-decoration-none">Home</a></li>
+                    <li><a href="/About Us.html" class="text-decoration-none">About Us</a></li>
+                    <li><a href="/Community.html" class="text-decoration-none">Services</a></li>
+                    <li><a href="/Contact.html" class="text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <p>123 Main Street, City</p>
+                <p>Email: info@example.com</p>
+                <p>Phone: +234-901-231-6700</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Follow Us</h5>
+                <ul class="list-inline">
+                    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                </ul>
+            </div>
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <p>&copy; 2024 Your Company. All rights reserved.</p>
+              </div>
+        </div>
+    </div>
+</footer>
+<script>
+  function append(){
+    alert("Thank you!!!!")
+    window.location.href = `index.html`
+  }
+  function validateForm(){
+    var emailInput=
+    document.getElementById("emailInput");
+    var email = emailInput.value;
+
+    if(!email.includes("@")){
+      alert("please enter a valid email address");
+      return false; //Prevent from submission
+    }
+    return true; //Allow form submission
+  }
+</script>
+</body>
